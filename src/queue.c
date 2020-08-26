@@ -154,7 +154,7 @@ void queue_push(queue_t * q, void* data, uint16_t priority)
   * @brief Adding one block to QUEUE
   * @param queue_t * q - Pointer to the QUEUE structure.
   * @param void* data - Pointer to input data
-  * @param uint16_t priority - priority
+  * @param uint16_t priority - priority in range from 0 to 65535. 0 is a maximum priority. 65535 is a minimum priority
   * @retval True/False. True if successfully adding block of data to queue
   */
 _Bool queue_add(queue_t * q, void* data, uint16_t priority)
